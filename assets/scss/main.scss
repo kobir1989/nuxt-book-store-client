@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&family=Inconsolata:wght@200;300;400;500;600&display=swap");
+
+// Taailwind
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+// Base
+@import "./base";
+@import "./variables";
+@import "./animations";

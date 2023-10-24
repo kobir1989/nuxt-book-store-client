@@ -1,0 +1,35 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    "Cairo",
+    "Inconsolata" sans-serif,
+    monospace,
+    -apple-system;
+
+  // font rendering issue on macOS Safari and Chrome browsers.
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
+}
+
+.nav_hover_dot {
+  li {
+    cursor: pointer;
+    position: relative;
+
+    &:hover::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -0.8rem;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #fff;
+      transform: translate(0, -50%);
+    }
+  }
+}

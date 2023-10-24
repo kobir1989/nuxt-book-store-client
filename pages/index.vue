@@ -1,9 +1,10 @@
-<script></script>
+<script setup></script>
 
 <template>
-  <div class="flex">
-    <h1>Hello</h1>
-  </div>
+  <main class="bg-black-900">
+    <HeroSection />
+    <div class="h-[200vh]">fdfd</div>
+  </main>
 </template>
 
 <style lang="scss" scoped></style>

@@ -1,10 +1,18 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
-import { resolve } from "path";
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  alias: {
-    "@": resolve(__dirname, "/"),
-  },
+
+  components: [
+    {
+      path: "~/components",
+      pathPrefix: false,
+    },
+  ],
   css: ["~/assets/scss/main.scss"],
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "vue3-carousel-nuxt",
+    "@nuxt/image",
+    "nuxt-swiper",
+    "nuxt-headlessui",
+  ],
 });
