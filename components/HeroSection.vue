@@ -45,7 +45,9 @@ const closeModal = () => {
         <NuxtImg preload format="webp" :src="cover" class="fade-image" />
       </SwiperSlide>
     </Swiper>
-    <PopupModal :is-shown="isModal" @close="closeModal" />
+    <PopupModal :is-shown="isModal" @close="closeModal">
+      <BookingForm />
+    </PopupModal>
   </section>
 </template>
 

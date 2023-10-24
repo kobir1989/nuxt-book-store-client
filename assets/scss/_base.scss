@@ -19,7 +19,6 @@ body {
   li {
     cursor: pointer;
     position: relative;
-
     &:hover::before {
       content: "";
       position: absolute;
@@ -32,4 +31,18 @@ body {
       transform: translate(0, -50%);
     }
   }
+}
+
+input {
+  outline: none;
+}
+.focus_input {
+  @apply focus:border-gold-500 focus:ring-1 focus:ring-gold-500 transition duration-150 ease-in-out;
+}
+.input_common_styles {
+  @apply w-full px-4 py-3 shadow-sm bg-[#252d30] border border-gold-900 rounded-md text-[#FFF] text-sm font-inconso;
+}
+
+.input_error_styles {
+  @apply absolute text-xs text-red-900 pt-[2px] px-[1rem] font-inconso font-bold tracking-[0.5] block transition duration-100 ease-linear;
 }

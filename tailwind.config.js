@@ -10,7 +10,7 @@ export default {
     },
     colors: {
       red: {
-        900: "#ff2b2b",
+        900: "#df5c5c",
         200: "#ffd4d4",
       },
 
@@ -22,9 +22,11 @@ export default {
       black: {
         900: "#141A1C",
         800: "#0C1315",
+        500: "#212b2e",
       },
       gold: {
         900: "#8F7C61",
+        500: "#9e7d4e",
       },
     },
     fontFamily: {
