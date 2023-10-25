@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 defineEmits(["open-search"]);
 const isSearchOpen = useSearchModal();
 

@@ -1,5 +1,5 @@
 <script setup>
-import { covers } from "../constants/covers";
+import { covers } from "~/constants/covers";
 const isModal = ref(false);
 
 // Toggle Booking From Modal
@@ -22,10 +22,10 @@ const closeModal = () => {
     <div
       class="z-[10] absolute top-[50%] md:left-[10%] left-[5%] -translate-y-[50%]"
     >
-      <h1 class="text-lg text-[#FFF]">
+      <section-title>
         Need to Rent a Luxury Car? <br />
-        Send A Request
-      </h1>
+        Send A Request</section-title
+      >
       <p class="text-[1.2rem] text-[#FFF] mt-3">
         Complete the form below and we'll contact you as soon as possible
       </p>

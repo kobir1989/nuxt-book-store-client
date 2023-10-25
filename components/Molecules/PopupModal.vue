@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 defineEmits(["close"]);
 defineProps({
   isShown: Boolean,
@@ -7,7 +7,7 @@ defineProps({
 
 <template>
   <Teleport to="body">
-    <Transition name="slide-fade">
+    <Transition name="bounce-fade">
       <div
         v-show="isShown"
         class="fixed inset-0 w-full h-full z-40 bg-[#141a1caf]"
@@ -33,24 +33,6 @@ defineProps({
 </template>
 
 <style lang="scss" scoped>
-.slide-fade-enter-from {
-  opacity: 0;
-  transform: scale(1.2);
-}
-.slide-fade-enter-to {
-  opacity: 1;
-  transform: scale(1);
-}
-.slide-fade-enter-active,
-.slide-fade-leave-active {
-  transition: all 0.2s ease-in-out;
-}
-
-.slide-fade-leave-to {
-  opacity: 0;
-  transform: scale(1.2);
-  transition: all 0.2s ease-in-out;
-}
 .gold-border {
   @apply border border-gold-900;
 }
