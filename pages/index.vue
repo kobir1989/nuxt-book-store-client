@@ -1,13 +1,9 @@
-<script setup>
-const isSearchOpen = useSearchModal();
-</script>
-
 <template>
   <main class="bg-black-900">
-    <FullScreenSearch v-show="isSearchOpen" />
-
+    <!-- Hero Section  -->
     <HeroSection />
-    <div class="h-[200vh]">fdfd</div>
+    <!-- Product info section  -->
+    <ProductInfo />
   </main>
 </template>
 

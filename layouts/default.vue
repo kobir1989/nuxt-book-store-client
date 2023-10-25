@@ -1,5 +1,6 @@
 <script setup>
 const { currentPosition } = useScrollPosition();
+const isSearchOpen = useSearchModal();
 const { width } = useWindowWidth();
 const navDrawer = useShowNavDrawer();
 </script>
@@ -17,6 +18,9 @@ const navDrawer = useShowNavDrawer();
     </Transition>
     <!-- Mobile Nav Drawer  -->
     <MobileNavDrawer v-show="navDrawer" />
+    <!-- Full screen Search  -->
+    <FullScreenSearch v-show="isSearchOpen" />
+
     <slot />
   </main>
 </template>

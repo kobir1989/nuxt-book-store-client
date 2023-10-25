@@ -51,3 +51,20 @@
   transform: scale(1.2);
   transition: all 0.2s ease-in-out;
 }
+
+// Transition name = "slide-bottom"
+.slide-bottom-enter-from {
+  transform: translateY(20px);
+}
+.slide-bottom-enter-to {
+  transform: translateY(0);
+}
+.slide-bottom-enter-active,
+.slide-bottom-leave-active {
+  transition: translateY 0.4s ease-in-out;
+}
+
+.slide-bottom-leave-to {
+  transform: translateY(20px);
+  transition: translateY 0.4s ease-in-out;
+}
