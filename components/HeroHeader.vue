@@ -1,5 +1,14 @@
+<script setup lang="ts">
+defineEmits(["open-search"]);
+const isSearchOpen = useSearchModal();
+
+const toggleSearch = () => {
+  isSearchOpen.value = !isSearchOpen.value;
+};
+</script>
+
 <template>
-  <header>
+  <header class="hidden lg:block">
     <div class="flex justify-between items-center py-5 px-[10%]">
       <h2 class="text-[#FFF] text-[1.4rem] tracking-[2px] font-cairo">
         DREAMY DRIVE
@@ -22,7 +31,7 @@
     </div>
     <div class="flex justify-between border-t-[1px] border-white w-full">
       <ul
-        class="text-[#FFF] flex items-center gap-[2rem] px-[10%] py-5 font-inconso tracking-[2px] text-sm nav_hover_dot"
+        class="text-[#FFF] w-full flex items-center gap-[2rem] ml-[10%] my-5 font-inconso tracking-[2px] text-sm nav_hover_dot"
       >
         <li>PREMIUM VEHICLES</li>
         <li>LUXURY VEHICLES</li>
@@ -30,9 +39,12 @@
         <li>PRICING PACKAGES</li>
         <li>OUR SERVICES</li>
       </ul>
-      <div class="text-[#FFF] text-[2rem] px-[10%] py-5">
+      <button
+        class="text-[#FFF] text-[2rem] mr-[10%] my-5"
+        @click="toggleSearch"
+      >
         <search-icon />
-      </div>
+      </button>
     </div>
   </header>
 </template>

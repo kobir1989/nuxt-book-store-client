@@ -14,7 +14,7 @@ defineProps({
         @click="$emit('close')"
       >
         <div
-          class="fixed inset-0 md:inset-1/2 gold-border bg-[#2a3336] w-[100%] h-[100%] md:w-[50%] md:h-[70%] z-50 rounded-lg shadow-xl p-4 md:-translate-x-[50%] md:-translate-y-[50%]"
+          class="fixed inset-0 md:inset-1/2 md:gold-border bg-[#2a3336] w-[100%] h-[100%] md:w-[50%] md:h-[70%] z-50 lg:rounded-lg shadow-xl p-4 md:-translate-x-[50%] md:-translate-y-[50%]"
           @click.stop
         >
           <button

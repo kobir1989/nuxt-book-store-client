@@ -46,3 +46,37 @@ input {
 .input_error_styles {
   @apply absolute text-xs text-red-900 pt-[2px] px-[1rem] font-inconso font-bold tracking-[0.5] block transition duration-100 ease-linear;
 }
+
+// Transition name="slide-fade"
+.slide-fade-enter-from {
+  transform: translateY(-60px);
+}
+.slide-fade-enter-to {
+  transform: translateY(0);
+}
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: all 0.3s ease-in-out;
+}
+
+.slide-fade-leave-to {
+  transform: translateY(-60px);
+  transition: all 0.3s ease-in-out;
+}
+
+// Transition name = "slide-up"
+.slide-up-enter-from {
+  transform: translateY(-100%);
+}
+.slide-up-enter-to {
+  transform: translateY(0);
+}
+.slide-up-enter-active,
+.slide-up-leave-active {
+  transition: all 0.4s ease-in-out;
+}
+
+.slide-up-leave-to {
+  transform: translateY(-100%);
+  transition: all 0.4s ease-in-out;
+}

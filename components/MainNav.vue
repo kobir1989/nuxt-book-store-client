@@ -1,5 +1,12 @@
-<script>
-export default {};
+<script setup>
+const isSearchOpen = useSearchModal();
+const navDrawer = useShowNavDrawer();
+const toggleSearch = () => {
+  isSearchOpen.value = !isSearchOpen.value;
+};
+const toggleDrawer = () => {
+  navDrawer.value = !navDrawer.value;
+};
 </script>
 
 <template>
@@ -20,8 +27,10 @@ export default {};
       <li>PRICING PACKAGES</li>
     </ul>
     <div class="flex gap-8">
-      <button class="text-[1.5rem]"><SearchIcon /></button>
-      <button class="block lg:hidden text-[2rem]">
+      <button class="text-[1.5rem]" @click="toggleSearch">
+        <SearchIcon />
+      </button>
+      <button class="block lg:hidden text-[2rem]" @click="toggleDrawer">
         <MenuIcon />
       </button>
     </div>

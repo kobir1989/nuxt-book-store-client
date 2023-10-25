@@ -14,11 +14,14 @@ const closeModal = () => {
 
 <template>
   <section class="overflow-x-hidden relative">
+    <!-- visible on big screens -->
     <div class="z-[10] w-full absolute inset-0 -translate-y-0">
       <HeroHeader />
     </div>
 
-    <div class="z-[10] absolute top-[50%] left-[10%] -translate-y-[50%]">
+    <div
+      class="z-[10] absolute top-[50%] md:left-[10%] left-[5%] -translate-y-[50%]"
+    >
       <h1 class="text-lg text-[#FFF]">
         Need to Rent a Luxury Car? <br />
         Send A Request
@@ -58,6 +61,7 @@ img {
   object-fit: cover;
 }
 .fade-image {
+  z-index: 0;
   opacity: 0;
   transform: scale(1);
   transition: all 0.8s cubic-bezier(0.25, 0.45, 0.45, 0.95);
