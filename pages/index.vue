@@ -4,6 +4,10 @@
     <HeroSection />
     <!-- Product info section  -->
     <ProductInfo />
+    <!-- Transportation Details section -->
+    <TransportationDetails />
+    <!-- Premium Drivers Section -->
+    <PremiumDrivers />
   </main>
 </template>
 

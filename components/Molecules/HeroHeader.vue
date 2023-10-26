@@ -29,7 +29,7 @@ const toggleSearch = () => {
         </p>
       </div>
     </div>
-    <div class="flex justify-between border-t-[1px] border-white w-full">
+    <div class="flex justify-between border-t border-white w-full">
       <ul
         class="text-[#FFF] w-full flex items-center gap-[2rem] ml-[10%] my-5 font-inconso tracking-[2px] text-sm nav_hover_dot"
       >

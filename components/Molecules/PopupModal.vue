@@ -23,7 +23,7 @@ defineProps({
           >
             <CloseIcon />
           </button>
-          <div class="mt-[6rem] w-full px-4">
+          <div class="w-full mt-[6rem] px-4">
             <slot />
           </div>
         </div>
