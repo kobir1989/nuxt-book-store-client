@@ -22,9 +22,9 @@ const img = useImage();
             src="/images/care.jpg"
             alt="care"
             width="600"
-            height="600"
+            height="800"
             :placeholder="
-              img(`/nuxt.svg`, { h: 600, f: 'png', blur: 2, q: 50 })
+              img(`/nuxt.svg`, { h: 800, f: 'png', blur: 2, q: 50 })
             "
           />
         </div>
@@ -34,9 +34,9 @@ const img = useImage();
             src="/images/care-2.jpg"
             alt="care"
             width="600"
-            height="600"
+            height="800"
             :placeholder="
-              img(`/nuxt.svg`, { h: 600, f: 'png', blur: 2, q: 50 })
+              img(`/nuxt.svg`, { h: 800, f: 'png', blur: 2, q: 50 })
             "
           />
         </div>

@@ -38,7 +38,7 @@ onUpdated(() => {
 <style lang="scss" scoped>
 .custom_cursor {
   cursor:
-    url("../assets/cursor.svg") 8 8,
+    url("../../assets/cursor.svg") 8 8,
     auto;
 }
 

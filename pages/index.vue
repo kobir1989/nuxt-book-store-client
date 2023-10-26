@@ -12,6 +12,8 @@
     <OfferBanner />
     <!-- Team info section  -->
     <TeamInfo />
+    <!-- Company info section  -->
+    <CompanyInfo />
   </main>
 </template>
 
