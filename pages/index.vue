@@ -14,6 +14,15 @@
     <TeamInfo />
     <!-- Company info section  -->
     <CompanyInfo />
+    <!-- Testimonials Section (*customar ratings with carousal) -->
+    <TestimonialsSection />
+    <!-- Pricing details section -->
+    <PricingDetails />
+    <!-- Discount banner section full screen width -->
+    <DiscountBanner
+      lebel="Get 15% Off Your Rental! <br />
+       Choose Your Model"
+    />
   </main>
 </template>
 

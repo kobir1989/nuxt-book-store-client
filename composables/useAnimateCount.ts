@@ -11,7 +11,7 @@ export const useAnimateCount = (totalCount: number): CurrentNumber => {
     }
   };
   onMounted(() => {
-    timeout = setInterval(count, 50);
+    timeout = setInterval(count, 30);
   });
 
   onUnmounted(() => {

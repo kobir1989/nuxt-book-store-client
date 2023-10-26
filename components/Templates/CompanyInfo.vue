@@ -41,7 +41,7 @@ const years = useAnimateCount(21);
           <div
             class="flex md:gap-[6rem] items-start lg:items-end justify-between md:justify-start lg:justify-end pt-[2rem] text-[#FFF]"
           >
-            <div>
+            <div class="min-w-[12rem]">
               <h2 class="text-[3.5rem] md:text-xl font-[600] relative">
                 {{ years.currentNumber }}
                 <span class="text-[2rem] md:text-[3rem] absolute top-0">+</span>
@@ -50,7 +50,7 @@ const years = useAnimateCount(21);
                 Years of experience
               </p>
             </div>
-            <div>
+            <div class="min-w-[12rem]">
               <h2 class="text-[3.5rem] md:text-xl font-[600] relative mr-6">
                 {{ clients.currentNumber }}
                 <span class="text-[2rem] md:text-[3rem] absolute bottom-1"
