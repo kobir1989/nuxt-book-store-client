@@ -46,3 +46,8 @@ input {
 .input_error_styles {
   @apply absolute text-xs text-red-900 pt-[2px] px-[1rem] font-inconso font-bold tracking-[0.5] block transition duration-100 ease-linear;
 }
+
+.border_bottom {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #5a5a5a;
+}

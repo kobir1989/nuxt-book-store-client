@@ -47,5 +47,3 @@ import { pricingArr } from "~/constants/pricingArr";
     </div>
   </MainContainer>
 </template>
-
-<style lang="scss" scoped></style>

@@ -75,15 +75,11 @@ const closeVideoModal = () => {
 </template>
 
 <style lang="scss" scoped>
-.border_bottom {
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #5a5a5a;
-}
 .play_button {
   position: absolute;
   top: 50%;
-  left: 10%;
-  transform: translate(-50%, -50%);
+  left: 2rem;
+  transform: translate(0, -50%);
   border: 2px solid #7e7d7d;
   border-radius: 50%;
   & svg {

@@ -1,3 +1,6 @@
+<script setup>
+const img = useImage();
+</script>
 <template>
   <div class="pt-[5rem] pb-[5rem]">
     <MainContainer>
@@ -14,14 +17,30 @@
           </div>
         </div>
         <div class="col-span-8 sm:col-span-4 lg:col-span-2 max-w-[30rem]">
-          <NuxtImg src="/images/care.jpg" alt="care" />
+          <NuxtImg
+            format="webp"
+            src="/images/care.jpg"
+            alt="care"
+            width="600"
+            height="600"
+            :placeholder="
+              img(`/nuxt.svg`, { h: 600, f: 'png', blur: 2, q: 50 })
+            "
+          />
         </div>
         <div class="col-span-8 sm:col-span-4 lg:col-span-2 max-w-[30rem]">
-          <NuxtImg src="/images/care-2.jpg" alt="care" />
+          <NuxtImg
+            format="webp"
+            src="/images/care-2.jpg"
+            alt="care"
+            width="600"
+            height="600"
+            :placeholder="
+              img(`/nuxt.svg`, { h: 600, f: 'png', blur: 2, q: 50 })
+            "
+          />
         </div>
       </div>
     </MainContainer>
   </div>
 </template>
-
-<style lang="scss" scoped></style>

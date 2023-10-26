@@ -8,6 +8,10 @@
     <TransportationDetails />
     <!-- Premium Drivers Section -->
     <PremiumDrivers />
+    <!-- Offer Banner section (*Full screen width) -->
+    <OfferBanner />
+    <!-- Team info section  -->
+    <TeamInfo />
   </main>
 </template>
 
