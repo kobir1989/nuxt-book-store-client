@@ -12,7 +12,7 @@ const closeVideoModal = () => {
 
 <template>
   <div class="bg-black-800 mt-[5rem] pb-[5rem]">
-    <main-container>
+    <main-container class="intersection">
       <div class="pt-[5rem] border_bottom">
         <section-title
           >Ride To Destinations <br />
@@ -47,7 +47,9 @@ const closeVideoModal = () => {
           format="webp"
           width="1280"
           height="600"
-          :placeholder="img(`/nuxt.svg`, { h: 600, f: 'png', blur: 2, q: 50 })"
+          :placeholder="
+            img(`/images/driver.jpg`, { h: 600, f: 'png', blur: 2, q: 50 })
+          "
         />
         <button
           class="play_button lg:h-[10rem] h-[6rem] lg:w-[10rem] w-[6rem] text-[#7e7d7d] flex items-center justify-center text-[3rem] lg:text-[4rem]"
@@ -57,7 +59,11 @@ const closeVideoModal = () => {
         </button>
       </div>
       <!-- Video Player Modal  -->
-      <PopupModal :is-shown="isVideoModal" @close="closeVideoModal">
+      <PopupModal
+        :is-shown="isVideoModal"
+        :is-video="true"
+        @close="closeVideoModal"
+      >
         <iframe
           v-if="isVideoModal"
           class="rounded-lg"

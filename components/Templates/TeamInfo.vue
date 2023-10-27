@@ -5,7 +5,7 @@ const img = useImage();
 
 <template>
   <div class="bg-black-800 pt-[5rem] pb-[5rem]">
-    <MainContainer>
+    <MainContainer class="intersection">
       <div class="border_bottom">
         <SectionTitle>Our Proffesional Chauffeurs</SectionTitle>
         <span
@@ -23,7 +23,12 @@ const img = useImage();
               height="500"
               width="450"
               :placeholder="
-                img(`/nuxt.svg`, { h: 500, f: 'png', blur: 2, q: 50 })
+                img(`/images/${team?.image}`, {
+                  h: 450,
+                  f: 'png',
+                  blur: 2,
+                  q: 50,
+                })
               "
             />
           </div>

@@ -23,7 +23,7 @@ defineProps({
     </SectionTitle>
     <span
       name="tag"
-      class="block text-gold-900 text-md font-[600] tracking-[2px] mt-[1rem]"
+      class="block text-md font-[600] mt-[1rem] gold_text_long_spacing"
     >
       {{ tag }}
     </span>

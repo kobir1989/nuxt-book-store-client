@@ -1,7 +1,14 @@
 <script setup>
 defineEmits(["close"]);
 defineProps({
-  isShown: Boolean,
+  isShown: {
+    type: Boolean,
+    default: false,
+  },
+  isVideo: {
+    type: Boolean,
+    default: false,
+  },
 });
 </script>
 
@@ -10,11 +17,12 @@ defineProps({
     <Transition name="bounce-fade">
       <div
         v-show="isShown"
-        class="fixed inset-0 w-full h-full z-40 bg-[#141a1caf]"
+        class="fixed inset-0 w-full h-full z-40 bg-[#141a1caf] backdrop-blur-md"
         @click="$emit('close')"
       >
         <div
-          class="fixed inset-0 md:inset-1/2 md:gold-border bg-[#2a3336] w-[100%] h-[100%] md:w-[50%] md:h-[70%] z-50 lg:rounded-lg shadow-xl p-4 md:-translate-x-[50%] md:-translate-y-[50%]"
+          class="fixed inset-0 md:inset-1/2 md:gold-border w-[100%] h-[100%] md:w-[50%] md:h-[70%] z-50 lg:rounded-lg md:-translate-x-[50%] md:-translate-y-[50%]"
+          :class="{ 'border border-gold-900 p-[2rem] shadow-xl': !isVideo }"
           @click.stop
         >
           <button
@@ -23,7 +31,10 @@ defineProps({
           >
             <CloseIcon />
           </button>
-          <div class="w-full mt-[6rem] px-4">
+          <div
+            class="w-full mt-[3.8rem]"
+            :class="{ 'px-4 mt-[6rem]': !isVideo }"
+          >
             <slot />
           </div>
         </div>

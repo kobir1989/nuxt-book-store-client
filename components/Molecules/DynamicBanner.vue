@@ -22,7 +22,7 @@ defineProps({
     :style="{ backgroundImage: 'url(' + imageUrl + ')' }"
   >
     <div
-      class="max-w-[1280px] m-auto h-full flex flex-col gap-10 px-[2rem] justify-center"
+      class="max-w-[1280px] m-auto h-full flex flex-col gap-10 px-[2rem] justify-center intersection"
       :class="{
         'items-end text-right': textAlign === 'right',
         'items-start': textAlign === 'left',

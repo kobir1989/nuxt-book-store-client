@@ -3,7 +3,7 @@ import { pricingArr } from "~/constants/pricingArr";
 </script>
 
 <template>
-  <MainContainer>
+  <MainContainer class="intersection">
     <!-- title & description -->
     <div class="flex flex-col lg:flex-row gap-[2rem] mt-[5rem]">
       <SectionTitle

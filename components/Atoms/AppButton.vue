@@ -16,7 +16,7 @@ defineProps({
   <button
     :type="type"
     :class="{
-      'flex items-center gap-2 text-sm py-3 px-12 border-[1px] transition duration-300 ease-out text-[#FFF] tracking-[2px] rounded-md  hover:bg-gold-500': true,
+      'flex items-center gap-2 text-sm py-3 px-12 border-[1px] transition_03s text-[#FFF] tracking-[2px] rounded-md hover:bg-gold-500': true,
       'border-gold-900 bg-none': variant === 'outlined',
       'bg-gold-900 border-none': variant === 'primary',
     }"

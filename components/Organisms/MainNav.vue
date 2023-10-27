@@ -1,4 +1,5 @@
 <script setup>
+import { navLinks } from "~/constants/navLinks";
 const isSearchOpen = useSearchModal();
 const navDrawer = useShowNavDrawer();
 const toggleSearch = () => {
@@ -21,10 +22,9 @@ const toggleDrawer = () => {
     <ul
       class="hidden lg:flex gap-[2rem] font-inconso tracking-[2px] text-sm links"
     >
-      <li><NuxtLink to="/">PREMIUM VEHICLES</NuxtLink></li>
-      <li><NuxtLink to="/">LUXURY VEHICLES</NuxtLink></li>
-      <li><NuxtLink to="/">OUR DRIVERS</NuxtLink></li>
-      <li><NuxtLink to="/">PRICING PACKAGES</NuxtLink></li>
+      <li v-for="navLink in navLinks" :key="navLink?.id">
+        <NuxtLink :to="navLink?.linkTo">{{ navLink?.lebel }}</NuxtLink>
+      </li>
     </ul>
     <div class="flex gap-8">
       <button class="text-[1.5rem]" @click="toggleSearch">

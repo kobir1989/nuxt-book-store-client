@@ -1,9 +1,15 @@
+<script setup>
+useIntersection();
+</script>
+
 <template>
   <main class="bg-black-900">
     <!-- Hero Section  -->
     <HeroSection />
     <!-- Product info section  -->
-    <ProductInfo />
+    <div>
+      <ProductInfo />
+    </div>
     <!-- Transportation Details section -->
     <TransportationDetails />
     <!-- Premium Drivers Section -->
@@ -30,8 +36,6 @@
        Choose Your Model"
     />
     <InfoBanner />
-    <!-- Footer Section  -->
-    <MainFooter />
   </main>
 </template>
 

@@ -4,7 +4,7 @@ import { ratingsArr } from "~/constants/ratingsArr";
 
 <template>
   <div class="bg-black-800 py-[5rem]">
-    <MainContainer>
+    <MainContainer class="intersection">
       <div>
         <SectionTitle>
           We trive to meet the needs of our clients <br />

@@ -1,5 +1,6 @@
 <script setup>
 import { covers } from "~/constants/covers";
+const img = useImage();
 const isModal = ref(false);
 
 // Toggle Booking From Modal
@@ -20,7 +21,7 @@ const closeModal = () => {
     </div>
 
     <div
-      class="z-[10] absolute top-[50%] md:left-[10%] left-[5%] -translate-y-[50%]"
+      class="z-[10] absolute top-[50%] md:left-[10%] left-[5%] -translate-y-[50%] intersection"
     >
       <section-title>
         Need to Rent a Luxury Car? <br />
@@ -30,7 +31,7 @@ const closeModal = () => {
         Complete the form below and we'll contact you as soon as possible
       </p>
       <div class="mt-8">
-        <AppButton @click="toggleModal">BOOK NOW</AppButton>
+        <AppButton variant="outlined" @click="toggleModal">BOOK NOW</AppButton>
       </div>
     </div>
 
@@ -45,7 +46,13 @@ const closeModal = () => {
       }"
     >
       <SwiperSlide v-for="(cover, index) in covers" :key="index">
-        <NuxtImg preload format="webp" :src="cover" class="fade-image" />
+        <NuxtImg
+          preload
+          format="webp"
+          :placeholder="img(`${cover}`, { h: 800, f: 'png', blur: 2, q: 50 })"
+          :src="cover"
+          class="fade-image"
+        />
       </SwiperSlide>
     </Swiper>
     <PopupModal :is-shown="isModal" @close="closeModal">

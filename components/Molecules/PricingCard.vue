@@ -37,7 +37,9 @@ defineProps({
         format="webp"
         width="500"
         height="600"
-        :placeholder="img(`/nuxt.svg`, { h: 600, f: 'png', blur: 2, q: 50 })"
+        :placeholder="
+          img(`/images/${image}`, { h: 600, f: 'png', blur: 2, q: 50 })
+        "
       />
       <div class="price_details px-6 absolute top-1/2 left-1/2 w-[100%]">
         <h2 class="text-[#FFF] text-[1.8rem] font-[600]">{{ lebel }}</h2>

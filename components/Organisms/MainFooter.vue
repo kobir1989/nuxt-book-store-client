@@ -4,7 +4,7 @@ import { ourServices, quickLinks } from "~/constants/footerLinks";
 
 <template>
   <footer class="bg-black-800 pt-[5rem]">
-    <MainContainer>
+    <MainContainer class="intersection">
       <div
         class="grid grid-cols-9 gap-10 content-center place-content-center pb-[5rem]"
       >

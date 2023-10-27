@@ -5,7 +5,7 @@ const img = useImage();
 
 <template>
   <div class="py-[5rem]">
-    <MainContainer>
+    <MainContainer class="intersection">
       <div class="border_bottom">
         <SectionTitle> A High Variety Of Options </SectionTitle>
         <p
@@ -29,7 +29,7 @@ const img = useImage();
               :alt="option?.label"
               format="webp"
               :placeholder="
-                img(option?.image, { h: 400, f: 'png', blur: 2, q: 50 })
+                img(option?.image, { h: 300, f: 'png', blur: 2, q: 50 })
               "
             />
           </div>

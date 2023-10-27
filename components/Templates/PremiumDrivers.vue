@@ -3,7 +3,7 @@ const img = useImage();
 </script>
 <template>
   <div class="pt-[5rem] pb-[5rem]">
-    <MainContainer>
+    <MainContainer class="intersection">
       <div class="grid grid-cols-8 gap-8">
         <div class="col-span-8 lg:col-span-4">
           <SectionText
@@ -24,7 +24,7 @@ const img = useImage();
             width="600"
             height="800"
             :placeholder="
-              img(`/nuxt.svg`, { h: 800, f: 'png', blur: 2, q: 50 })
+              img(`/images/care.jpg`, { h: 800, f: 'png', blur: 2, q: 50 })
             "
           />
         </div>
@@ -36,7 +36,7 @@ const img = useImage();
             width="600"
             height="800"
             :placeholder="
-              img(`/nuxt.svg`, { h: 800, f: 'png', blur: 2, q: 50 })
+              img(`/images/care-2.jpg`, { h: 800, f: 'png', blur: 2, q: 50 })
             "
           />
         </div>

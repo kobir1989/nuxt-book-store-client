@@ -7,6 +7,8 @@ const navDrawer = useShowNavDrawer();
 
 <template>
   <main>
+    <!-- Show scroll remaining of the Page -->
+    <ScrollPositionTraker />
     <!-- Main Nav -->
     <Transition name="slide-fade">
       <div
@@ -22,5 +24,7 @@ const navDrawer = useShowNavDrawer();
     <FullScreenSearch v-show="isSearchOpen" />
 
     <slot />
+    <!-- Footer Section  -->
+    <MainFooter />
   </main>
 </template>
