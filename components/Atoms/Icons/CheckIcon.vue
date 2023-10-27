@@ -1,0 +1,19 @@
+<template>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1em"
+    height="1em"
+    viewBox="0 0 2048 2048"
+  >
+    <path
+      fill="currentColor"
+      d="M1837 557L768 1627l-557-558l90-90l467 466l979-978l90 90z"
+    ></path>
+  </svg>
+</template>
+
+<script>
+export default {
+  name: "FluentMdl2CheckMark",
+};
+</script>

@@ -1,0 +1,52 @@
+.links {
+  @apply text-gray-900 uppercase text-sm font-[600] tracking-[2px];
+  & li {
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #fff;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+    a {
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover a {
+      color: #fff;
+      margin-left: 0.8rem;
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover::before {
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out 0.1s;
+    }
+  }
+}
+
+.focus_input {
+  @apply focus:border-gold-500 focus:ring-1 focus:ring-gold-500 transition duration-150 ease-in-out;
+}
+.input_common_styles {
+  @apply w-full px-4 py-3 shadow-sm bg-[#252d30] border border-gold-900 rounded-md text-[#FFF] text-sm font-inconso;
+}
+
+.input_error_styles {
+  @apply absolute text-xs text-red-900 pt-[2px] px-[1rem] font-inconso font-bold tracking-[0.5] block transition duration-100 ease-linear;
+}
+
+.transition_03s {
+  @apply transition duration-300 ease-in-out;
+}
+
+.gold_text_long_spacing {
+  @apply tracking-[2px] text-gold-500;
+}

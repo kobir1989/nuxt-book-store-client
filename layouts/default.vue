@@ -1,33 +1,30 @@
 <script setup>
 const { currentPosition } = useScrollPosition();
+const isSearchOpen = useSearchModal();
+const { width } = useWindowWidth();
+const navDrawer = useShowNavDrawer();
 </script>
 
 <template>
   <main>
+    <!-- Show scroll remaining of the Page -->
+    <ScrollPositionTraker />
+    <!-- Main Nav -->
     <Transition name="slide-fade">
-      <div v-show="currentPosition > 300" class="z-[20] fixed inset-0">
+      <div
+        v-show="currentPosition > 300 || width < 976"
+        class="z-[30] fixed inset-0 h-[4rem]"
+      >
         <MainNav />
       </div>
     </Transition>
+    <!-- Mobile Nav Drawer  -->
+    <MobileNavDrawer v-show="navDrawer" />
+    <!-- Full screen Search  -->
+    <FullScreenSearch v-show="isSearchOpen" />
 
     <slot />
+    <!-- Footer Section  -->
+    <MainFooter />
   </main>
 </template>
-
-<style lang="scss" scoped>
-.slide-fade-enter-from {
-  transform: translateY(-60px);
-}
-.slide-fade-enter-to {
-  transform: translateY(0);
-}
-.slide-fade-enter-active,
-.slide-fade-leave-active {
-  transition: all 0.3s ease-in-out;
-}
-
-.slide-fade-leave-to {
-  transform: translateY(-60px);
-  transition: all 0.3s ease-in-out;
-}
-</style>
