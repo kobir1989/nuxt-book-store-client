@@ -31,7 +31,7 @@ export default {
     },
     fontFamily: {
       inconso: ["Inconsolata", "monospace"],
-      cairo: ["Cairo", "sans-serif"],
+      sans: ["Open Sans", "sans-serif"],
     },
     fontSize: {
       xs: [
