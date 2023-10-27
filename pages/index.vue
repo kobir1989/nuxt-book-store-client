@@ -8,8 +8,13 @@
     <TransportationDetails />
     <!-- Premium Drivers Section -->
     <PremiumDrivers />
-    <!-- Offer Banner section (*Full screen width) -->
-    <OfferBanner />
+    <!-- Discount Banner section (*Full screen width) -->
+    <DynamicBanner
+      image-url="https://luxedrive.qodeinteractive.com/wp-content/uploads/2023/01/h1-img-5.jpg"
+      lebel="Do You Need To Rent A Car? <br />
+        See Our Offers"
+      text-align="right"
+    />
     <!-- Team info section  -->
     <TeamInfo />
     <!-- Company info section  -->
@@ -18,11 +23,15 @@
     <TestimonialsSection />
     <!-- Pricing details section -->
     <PricingDetails />
-    <!-- Discount banner section full screen width -->
-    <DiscountBanner
+    <!-- Discount banner section (*full screen width) -->
+    <DynamicBanner
+      image-url="https://luxedrive.qodeinteractive.com/wp-content/uploads/2023/01/h1-img-13.jpg"
       lebel="Get 15% Off Your Rental! <br />
        Choose Your Model"
     />
+    <InfoBanner />
+    <!-- Footer Section  -->
+    <MainFooter />
   </main>
 </template>
 

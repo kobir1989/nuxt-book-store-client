@@ -31,13 +31,12 @@ const toggleSearch = () => {
     </div>
     <div class="flex justify-between border-t border-white w-full">
       <ul
-        class="text-[#FFF] w-full flex items-center gap-[2rem] ml-[10%] my-5 font-inconso tracking-[2px] text-sm nav_hover_dot"
+        class="w-full flex items-center gap-[2rem] ml-[10%] my-5 font-inconso tracking-[2px] text-sm links"
       >
-        <li>PREMIUM VEHICLES</li>
-        <li>LUXURY VEHICLES</li>
-        <li>OUR DRIVERS</li>
-        <li>PRICING PACKAGES</li>
-        <li>OUR SERVICES</li>
+        <li><NuxtLink to="/">PREMIUM VEHICLES</NuxtLink></li>
+        <li><NuxtLink to="/">LUXURY VEHICLES</NuxtLink></li>
+        <li><NuxtLink to="/">OUR DRIVERS</NuxtLink></li>
+        <li><NuxtLink to="/">PRICING PACKAGES</NuxtLink></li>
       </ul>
       <button
         class="text-[#FFF] text-[2rem] mr-[10%] my-5"
@@ -48,3 +47,8 @@ const toggleSearch = () => {
     </div>
   </header>
 </template>
+<style scoped>
+li {
+  color: #fff !important;
+}
+</style>

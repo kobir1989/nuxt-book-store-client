@@ -19,12 +19,12 @@ const toggleDrawer = () => {
       </h2>
     </div>
     <ul
-      class="hidden lg:flex gap-[2rem] font-inconso tracking-[2px] text-sm nav_hover_dot"
+      class="hidden lg:flex gap-[2rem] font-inconso tracking-[2px] text-sm links"
     >
-      <li>PREMIUM VEHICLES</li>
-      <li>LUXURY VEHICLES</li>
-      <li>OUR DRIVERS</li>
-      <li>PRICING PACKAGES</li>
+      <li><NuxtLink to="/">PREMIUM VEHICLES</NuxtLink></li>
+      <li><NuxtLink to="/">LUXURY VEHICLES</NuxtLink></li>
+      <li><NuxtLink to="/">OUR DRIVERS</NuxtLink></li>
+      <li><NuxtLink to="/">PRICING PACKAGES</NuxtLink></li>
     </ul>
     <div class="flex gap-8">
       <button class="text-[1.5rem]" @click="toggleSearch">
@@ -36,9 +36,3 @@ const toggleDrawer = () => {
     </div>
   </nav>
 </template>
-
-<style lang="scss" scoped>
-li {
-  cursor: pointer;
-}
-</style>
