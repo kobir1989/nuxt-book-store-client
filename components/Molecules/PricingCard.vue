@@ -31,17 +31,15 @@ defineProps({
 <template>
   <div class="w-full">
     <div
-      class="top_layer_hover relative transition_03s max-h-[600px] max-w-[400]"
+      class="top_layer_hover relative transition_03s w-full h-[420px] md:h-[380px] lg:h-[520px]"
     >
       <NuxtImg
-        class="w-full h-full"
+        class="w-full h-full object-cover"
         :src="`/images/${image}`"
         :alt="lebel"
         format="webp"
-        width="500"
-        height="600"
         :placeholder="
-          img(`/images/${image}`, { h: 600, f: 'png', blur: 2, q: 50 })
+          img(`/images/${image}`, { h: 500, f: 'png', blur: 2, q: 50 })
         "
       />
       <div class="price_details px-6 absolute top-1/2 left-1/2 w-[100%]">

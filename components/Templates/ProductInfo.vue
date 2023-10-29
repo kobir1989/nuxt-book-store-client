@@ -28,13 +28,9 @@ import { pricingArr } from "~/constants/pricingArr";
     </div>
     <!-- Product Cards  -->
     <div
-      class="mt-[5rem] auto-rows-auto grid gird md:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-items-center gap-x-4 gap-y-12"
+      class="mt-[5rem] grid gird lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-items-center gap-x-4 gap-y-12"
     >
-      <div
-        v-for="product in pricingArr"
-        :key="product.id"
-        class="max-w-[24rem]"
-      >
+      <div v-for="product in pricingArr" :key="product.id" class="w-full">
         <PricingCard
           :name="product?.name"
           :lebel="product?.label"

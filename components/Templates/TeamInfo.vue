@@ -13,15 +13,14 @@ const img = useImage();
           >MEET OUR TEAM</span
         >
       </div>
-      <div class="grid grid-cols-1 justify-items-center md:grid-cols-3 gap-6">
-        <div v-for="team in teamsArr" :key="team?.id" class="pt-[3rem]">
-          <div class="max-w-[500px] max-h-[450px]">
+      <div class="grid grid-cols-1 justify-items-center sm:grid-cols-3 gap-6">
+        <div v-for="team in teamsArr" :key="team?.id" class="pt-[3rem] w-full">
+          <div class="w-full lg:h-[450px] sm:h-[300px] h-[450px]">
             <NuxtImg
+              class="w-full h-full object-cover"
               :src="`/images/${team?.image}`"
               :alt="team?.name"
               format="webp"
-              height="500"
-              width="450"
               :placeholder="
                 img(`/images/${team?.image}`, {
                   h: 450,
