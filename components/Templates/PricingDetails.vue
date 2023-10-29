@@ -18,7 +18,7 @@ const img = useImage();
         <div
           v-for="option in priceOptions"
           :key="option?.id"
-          class="flex mb-8 border_bottom"
+          class="flex mb-8 border_bottom intersection"
         >
           <!-- background image  -->
           <div class="w-[15rem] hidden lg:flex">

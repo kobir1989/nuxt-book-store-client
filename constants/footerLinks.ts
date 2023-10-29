@@ -16,7 +16,7 @@ export const quickLinks = [
   },
   {
     id: "q4",
-    lebel: "contruct",
+    lebel: "contact",
     linkTo: "/",
   },
 ];

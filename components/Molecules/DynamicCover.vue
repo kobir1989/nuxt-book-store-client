@@ -13,6 +13,10 @@ defineProps({
     type: String,
     default: "left",
   },
+  showButton: {
+    type: Boolean,
+    default: true,
+  },
 });
 </script>
 
@@ -33,7 +37,7 @@ defineProps({
         >{{ lebel.split('<br />')[0] }}<br />
         {{ lebel.split(' <br />')[1] }}</SectionTitle
       >
-      <div>
+      <div v-if="showButton">
         <AppButton variant="outlined">VIEW MORE</AppButton>
       </div>
     </div>

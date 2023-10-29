@@ -1,5 +1,5 @@
 <script setup>
-import { pricingArr } from "~/constants/pricingArr";
+import { landingPageProducts as products } from "~/constants/products";
 </script>
 
 <template>
@@ -30,7 +30,11 @@ import { pricingArr } from "~/constants/pricingArr";
     <div
       class="mt-[5rem] grid gird lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-items-center gap-x-4 gap-y-12"
     >
-      <div v-for="product in pricingArr" :key="product.id" class="w-full">
+      <div
+        v-for="product in products"
+        :key="product.id"
+        class="w-full intersection"
+      >
         <PricingCard
           :name="product?.name"
           :lebel="product?.label"
@@ -43,3 +47,4 @@ import { pricingArr } from "~/constants/pricingArr";
     </div>
   </MainContainer>
 </template>
+~/constants/products

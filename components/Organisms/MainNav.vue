@@ -1,5 +1,7 @@
 <script setup>
 import { navLinks } from "~/constants/navLinks";
+const route = useRoute();
+
 const isSearchOpen = useSearchModal();
 const navDrawer = useShowNavDrawer();
 const toggleSearch = () => {
@@ -8,21 +10,36 @@ const toggleSearch = () => {
 const toggleDrawer = () => {
   navDrawer.value = !navDrawer.value;
 };
+defineProps({
+  lightMood: {
+    type: Boolean,
+    default: false,
+  },
+});
 </script>
 
 <template>
   <nav
-    class="bg-black-900 border-b border-gold-900 text-[#FFF] flex justify-between items-center py-4 px-[2rem] xl:px-[4rem]"
+    class="flex justify-between items-center py-4 px-[2rem] xl:px-[4rem]"
+    :class="{
+      'bg-black-900 border-b border-gold-900 text-[#FFF]':
+        !lightMood && route.path === '/',
+      'bg-[#FFF]  text-black-900 shadow-sm': lightMood || route.path !== '/',
+    }"
   >
     <div>
-      <h2 class="text-[#FFF] text-[1.4rem] tracking-[2px] font-cairo">
+      <NuxtLink
+        to="/"
+        class="text-inherit text-[1.4rem] tracking-[2px] font-cairo"
+      >
         DREAMY DRIVE
-      </h2>
+      </NuxtLink>
     </div>
     <ul
-      class="hidden lg:flex gap-[2rem] font-inconso tracking-[2px] text-sm links"
+      class="hidden lg:flex gap-[2rem] font-inconso tracking-[2px] text-sm"
+      :class="{ 'links dark_nav ': !lightMood, 'links light_nav': lightMood }"
     >
-      <li v-for="navLink in navLinks" :key="navLink?.id">
+      <li v-for="navLink in navLinks.slice(0, 4)" :key="navLink?.id">
         <NuxtLink :to="navLink?.linkTo">{{ navLink?.lebel }}</NuxtLink>
       </li>
     </ul>

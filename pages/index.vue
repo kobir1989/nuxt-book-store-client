@@ -15,7 +15,7 @@ useIntersection();
     <!-- Premium Drivers Section -->
     <PremiumDrivers />
     <!-- Discount Banner section (*Full screen width) -->
-    <DynamicBanner
+    <DynamicCover
       image-url="https://luxedrive.qodeinteractive.com/wp-content/uploads/2023/01/h1-img-5.jpg"
       lebel="Do You Need To Rent A Car? <br />
         See Our Offers"
@@ -30,7 +30,7 @@ useIntersection();
     <!-- Pricing details section -->
     <PricingDetails />
     <!-- Discount banner section (*full screen width) -->
-    <DynamicBanner
+    <DynamicCover
       image-url="https://luxedrive.qodeinteractive.com/wp-content/uploads/2023/01/h1-img-13.jpg"
       lebel="Get 15% Off Your Rental! <br />
        Choose Your Model"

@@ -1,4 +1,5 @@
 <script setup>
+import { navLinks } from "~/constants/navLinks";
 defineEmits(["open-search"]);
 const isSearchOpen = useSearchModal();
 
@@ -33,10 +34,9 @@ const toggleSearch = () => {
       <ul
         class="w-full flex items-center gap-[2rem] ml-[10%] my-5 font-inconso tracking-[2px] text-sm links"
       >
-        <li><NuxtLink to="/">PREMIUM VEHICLES</NuxtLink></li>
-        <li><NuxtLink to="/">LUXURY VEHICLES</NuxtLink></li>
-        <li><NuxtLink to="/">OUR DRIVERS</NuxtLink></li>
-        <li><NuxtLink to="/">PRICING PACKAGES</NuxtLink></li>
+        <li v-for="navLink in navLinks.slice(0, 4)" :key="navLink?.id">
+          <NuxtLink :to="navLink?.linkTo">{{ navLink?.lebel }}</NuxtLink>
+        </li>
       </ul>
       <button
         class="text-[#FFF] text-[2rem] mr-[10%] my-5"
