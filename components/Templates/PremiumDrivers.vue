@@ -16,8 +16,11 @@ const img = useImage();
             <AppButton variant="outlined">BOOK NOW</AppButton>
           </div>
         </div>
-        <div class="col-span-8 sm:col-span-4 lg:col-span-2 max-w-[30rem]">
+        <div
+          class="col-span-8 sm:col-span-4 lg:col-span-2 max-w-[500] max-h-[600]"
+        >
           <NuxtImg
+            class="w-full h-full"
             format="webp"
             src="/images/care.jpg"
             alt="care"
@@ -28,8 +31,11 @@ const img = useImage();
             "
           />
         </div>
-        <div class="col-span-8 sm:col-span-4 lg:col-span-2 max-w-[30rem]">
+        <div
+          class="col-span-8 sm:col-span-4 lg:col-span-2 max-w-[500] max-h-[600]"
+        >
           <NuxtImg
+            class="w-full h-full"
             format="webp"
             src="/images/care-2.jpg"
             alt="care"

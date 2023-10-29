@@ -30,8 +30,11 @@ defineProps({
 
 <template>
   <div class="w-full">
-    <div class="top_layer_hover relative transition ease-in-out delay-150">
+    <div
+      class="top_layer_hover relative transition ease-in-out delay-150 m-h-[500px] m-w-[400]"
+    >
       <NuxtImg
+        class="w-full h-full"
         :src="`/images/${image}`"
         :alt="lebel"
         format="webp"

@@ -1,10 +1,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  image: {
-    domains: [
-      "https://github.com/kobir1989/nuxt-car-rental-service-client/tree/master/public",
-    ],
-  },
+
   components: [
     {
       path: "~/components",
