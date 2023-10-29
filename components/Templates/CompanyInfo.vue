@@ -12,6 +12,7 @@ const years = useAnimateCount(21);
           class="col-span-8 sm:col-span-4 lg:col-span-2 max-w-[500px] max-h-[750px]"
         >
           <NuxtImg
+            class="w-full h-full"
             format="webp"
             src="/images/premium-1.jpg"
             alt="care"
@@ -31,6 +32,7 @@ const years = useAnimateCount(21);
           class="col-span-8 sm:col-span-4 lg:col-span-2 max-w-[500px] max-h-[750px]"
         >
           <NuxtImg
+            class="w-full h-full"
             format="webp"
             src="/images/premium-2.jpg"
             alt="care"
