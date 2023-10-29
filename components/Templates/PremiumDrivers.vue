@@ -16,33 +16,25 @@ const img = useImage();
             <AppButton variant="outlined">BOOK NOW</AppButton>
           </div>
         </div>
-        <div
-          class="col-span-8 sm:col-span-4 lg:col-span-2 max-w-[500] max-h-[600]"
-        >
+        <div class="col-span-8 sm:col-span-4 lg:col-span-2 h-[350px]">
           <NuxtImg
-            class="w-full h-full"
+            class="w-full h-full object-cover"
             format="webp"
             src="/images/care.jpg"
             alt="care"
-            width="600"
-            height="800"
             :placeholder="
-              img(`/images/care.jpg`, { h: 800, f: 'png', blur: 2, q: 50 })
+              img(`/images/care.jpg`, { h: 500, f: 'png', blur: 2, q: 50 })
             "
           />
         </div>
-        <div
-          class="col-span-8 sm:col-span-4 lg:col-span-2 max-w-[500] max-h-[600]"
-        >
+        <div class="col-span-8 sm:col-span-4 lg:col-span-2 h-[350px]">
           <NuxtImg
-            class="w-full h-full"
+            class="w-full h-full object-cover"
             format="webp"
             src="/images/care-2.jpg"
             alt="care"
-            width="600"
-            height="800"
             :placeholder="
-              img(`/images/care-2.jpg`, { h: 800, f: 'png', blur: 2, q: 50 })
+              img(`/images/care-2.jpg`, { h: 500, f: 'png', blur: 2, q: 50 })
             "
           />
         </div>
