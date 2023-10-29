@@ -8,13 +8,15 @@ const years = useAnimateCount(21);
   <div class="pt-[5rem] pb-[5rem]">
     <MainContainer class="intersection">
       <div class="grid grid-cols-8 gap-8">
-        <div class="col-span-8 sm:col-span-4 lg:col-span-2 max-w-[30rem]">
+        <div
+          class="col-span-8 sm:col-span-4 lg:col-span-2 max-w-[500px] max-h-[750px]"
+        >
           <NuxtImg
             format="webp"
             src="/images/premium-1.jpg"
             alt="care"
-            width="600"
-            height="1000"
+            width="500"
+            height="750"
             :placeholder="
               img(`/images/premium-1.jpg`, {
                 h: 1000,
@@ -25,13 +27,15 @@ const years = useAnimateCount(21);
             "
           />
         </div>
-        <div class="col-span-8 sm:col-span-4 lg:col-span-2 max-w-[30rem]">
+        <div
+          class="col-span-8 sm:col-span-4 lg:col-span-2 max-w-[500px] max-h-[750px]"
+        >
           <NuxtImg
             format="webp"
             src="/images/premium-2.jpg"
             alt="care"
-            width="600"
-            height="1000"
+            width="500"
+            height="750"
             :placeholder="
               img(`/images/premium-2.jpg`, {
                 h: 1000,

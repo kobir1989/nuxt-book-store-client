@@ -42,7 +42,7 @@ const submitForm = () => {
   // Check if there are any error in the errors object.
   const hasError = Object.values(errors).some((err) => err !== "");
   if (!hasError) {
-    console.log(bookingInputValue);
+    // console.log(bookingInputValue);
   }
 };
 

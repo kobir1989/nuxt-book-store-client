@@ -15,7 +15,7 @@ const img = useImage();
       </div>
       <div class="grid grid-cols-1 justify-items-center md:grid-cols-3 gap-6">
         <div v-for="team in teamsArr" :key="team?.id" class="pt-[3rem]">
-          <div class="max-w-[25rem]">
+          <div class="max-w-[500px] max-h-[450px]">
             <NuxtImg
               :src="`/images/${team?.image}`"
               :alt="team?.name"
