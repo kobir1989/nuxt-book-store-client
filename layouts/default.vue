@@ -12,7 +12,7 @@ const navDrawer = useShowNavDrawer();
     <!-- Main Nav -->
     <Transition name="slide-fade">
       <div
-        v-show="currentPosition > 300 || width < 976"
+        v-show="currentPosition > 400 || width < 976"
         class="z-[30] fixed inset-0 h-[4rem]"
       >
         <MainNav />

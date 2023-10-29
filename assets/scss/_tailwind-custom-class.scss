@@ -13,7 +13,6 @@
       width: 5px;
       height: 5px;
       border-radius: 50%;
-      background: #fff;
       opacity: 0;
       transition: opacity 0.3s ease-in-out;
     }
@@ -21,13 +20,33 @@
       transition: all 0.3s ease-in-out;
     }
     &:hover a {
-      color: #fff;
       margin-left: 0.8rem;
       transition: all 0.3s ease-in-out;
     }
     &:hover::before {
       opacity: 1;
       transition: opacity 0.3s ease-in-out 0.1s;
+    }
+  }
+}
+
+.dark_nav {
+  li {
+    &::before {
+      background: #fff;
+    }
+    &:hover a {
+      color: #fff;
+    }
+  }
+}
+.light_nav {
+  li {
+    &::before {
+      background: var(--black);
+    }
+    &:hover a {
+      color: var(--black);
     }
   }
 }

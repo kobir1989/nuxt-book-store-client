@@ -12,8 +12,8 @@ const closeVideoModal = () => {
 
 <template>
   <div class="bg-black-800 mt-[5rem] pb-[5rem]">
-    <main-container class="intersection">
-      <div class="pt-[5rem] border_bottom">
+    <main-container>
+      <div class="pt-[5rem] border_bottom intersection">
         <section-title
           >Ride To Destinations <br />
           With Maximum Comfort
@@ -23,7 +23,9 @@ const closeVideoModal = () => {
           >FINEST TRANSPORT</span
         >
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-[4rem] pt-[2rem]">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-[4rem] pt-[2rem] intersection"
+      >
         <div>
           <h2 class="text-[1.5rem] text-[#FFF]">No Delays</h2>
           <p class="text-gray-200 text-md mt-4">
@@ -41,7 +43,7 @@ const closeVideoModal = () => {
           </p>
         </div>
       </div>
-      <div class="w-full relative">
+      <div class="w-full relative intersection">
         <NuxtImg
           src="/images/driver.jpg"
           format="webp"

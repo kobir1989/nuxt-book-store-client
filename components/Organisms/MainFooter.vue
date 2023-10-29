@@ -22,7 +22,7 @@ import { ourServices, quickLinks } from "~/constants/footerLinks";
           </p>
         </div>
         <!-- col-2 -->
-        <div class="col-span-9 sm:col-span-4 md:col-span-2">
+        <div class="col-span-9 sm:col-span-4 md:col-span-2 md:place-self-end">
           <h4 class="links_heading">Quick Links</h4>
           <ul class="links flex flex-col gap-8 font-inconso">
             <li v-for="quickLink in quickLinks" :key="quickLink?.id">
@@ -33,7 +33,9 @@ import { ourServices, quickLinks } from "~/constants/footerLinks";
           </ul>
         </div>
         <!-- col-3 -->
-        <div class="col-span-9 sm:col-span-5 md:col-span-3 font-inconso">
+        <div
+          class="col-span-9 sm:col-span-5 md:col-span-3 font-inconso sm:place-self-end"
+        >
           <h4 class="links_heading">Our Services</h4>
           <ul class="links flex flex-col gap-8">
             <li v-for="ourService in ourServices" :key="ourService?.id">

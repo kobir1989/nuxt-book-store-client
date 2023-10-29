@@ -2,7 +2,7 @@ export const navLinks = [
   {
     id: "n1",
     lebel: "PREMIUM VEHICLES",
-    linkTo: "/",
+    linkTo: "/premium-vehicles",
   },
   {
     id: "n2",
