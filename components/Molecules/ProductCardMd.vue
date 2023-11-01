@@ -10,8 +10,8 @@ defineProps({
     default: "",
   },
   price: {
-    type: String,
-    default: "",
+    type: Number,
+    default: 0,
   },
   ratings: {
     type: Number,
