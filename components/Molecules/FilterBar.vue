@@ -5,19 +5,28 @@ import {
   vehicleTypes,
 } from "~/constants/VheicleFilterOptions";
 
-const selectedValue = reactive({
-  model: "",
-  types: "",
-  color: "",
-});
+const emit = defineEmits(["update-filter"]);
+
+const updateSelectedValue = (key, value) => {
+  const selectedValue = {
+    model: "",
+    type: "",
+    color: "",
+  };
+  selectedValue[key] = value;
+  emit("update-filter", selectedValue);
+};
 </script>
 
 <template>
   <form class="flex flex-col md:flex-row gap-6 font-inconso w-full md:w-auto">
     <!-- Vehicle Types -->
     <div class="border_animation">
-      <select v-model="selectedValue.types" class="options_styles">
-        <option disabled value="">Vehicle Type</option>
+      <select
+        class="options_styles"
+        @change="updateSelectedValue('type', $event.target.value)"
+      >
+        <option value="">Vehicle Type</option>
         <option
           v-for="vTypes in vehicleTypes"
           :key="vTypes?.id"
@@ -30,8 +39,11 @@ const selectedValue = reactive({
     </div>
     <!-- Vehicles Model -->
     <div class="border_animation">
-      <select v-model="selectedValue.model" class="options_styles">
-        <option value="" disabled>Vehicle Model</option>
+      <select
+        class="options_styles"
+        @change="updateSelectedValue('model', $event.target.value)"
+      >
+        <option value="">Vehicle Model</option>
         <option
           v-for="vModel in vehicleModels"
           :key="vModel?.id"
@@ -43,8 +55,11 @@ const selectedValue = reactive({
     </div>
     <!-- Vehicles Color -->
     <div class="border_animation">
-      <select v-model="selectedValue.color" class="options_styles">
-        <option disabled value="">Vehicle Color</option>
+      <select
+        class="options_styles"
+        @change="updateSelectedValue('color', $event.target.value)"
+      >
+        <option value="">Vehicle Color</option>
         <option
           v-for="vColor in vehicleColor"
           :key="vColor?.id"
